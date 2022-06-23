@@ -1,0 +1,14 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.Container-App{
+    width: 100%;
+    min-height:1100px;
+    background-color: bisque;
+    display: grid;
+    grid-template-rows: 6% 94%;
+    grid-template-areas: "Container-Header-App"
+                            "Container-Main-App";
+}

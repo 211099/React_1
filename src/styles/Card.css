@@ -1,0 +1,89 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.Container-Card {
+    width: 95%;
+    height: 80px;
+    background-image: linear-gradient(to right, #283344, #2b3445, #2e3645, #313746, #343946);
+    margin: 0 0 10px 0;
+    display: grid;
+    grid-template-columns: 10% 70% 10% 10%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "Icon-User Items-Card Icon-Edit Icon-Delete";
+}
+
+.Container-Icon-User-Card {
+    grid-area: Icon-User;
+    border: white 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container-Items-Card {
+    min-width: 249px;
+    grid-area: Items-Card;
+    border: white 1px solid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "Name Name"
+        "Email Phone";
+        
+}
+
+.Item-Name-Card {
+    grid-area: Name;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Item-Email-Card {
+    grid-area: Email;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Item-Phone-Card {
+    grid-area: Phone;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container-Icon-Edit-Card {
+    grid-area: Icon-Edit;
+    border: white 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container-Icon-Delete-Card {
+    grid-area: Icon-Delete;
+    border: white 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Button-card {
+    color: #318aac !important;
+    font-weight: 100;
+    background: rgba(0, 0, 0, 0);
+    transition: all 1s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.Button-card:hover {
+    background: #318aac;
+    color: #fff !important;
+}

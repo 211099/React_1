@@ -1,0 +1,26 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.Container-Main {
+    width: 100%;
+    height: 100%;
+    background-color: #485461;
+    display: grid;
+    grid-template-columns: 38% 62%;
+    grid-template-areas: "Login List";
+    padding: 5% 0 0 0;
+}
+
+.Container-Register-Main {
+    grid-area: Login;
+    display: flex;
+    justify-content: center;
+}
+
+.Container-List-Main {
+    grid-area: List;
+    display: flex;
+    justify-content: center;
+}
